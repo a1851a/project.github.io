@@ -1,0 +1,75 @@
+#gocluster{
+	text-align:right;
+	font-size:25px;
+}
+#gocross{
+	text-align:right;
+	font-size:25px;	
+}
+#gomain{
+	text-align:right;
+	font-size:25px;	
+}
+#mainleft{
+	width:42%;
+	height:60vh;
+	float:left;
+	padding:4%;
+}
+#mainright{
+	width:42%;
+	height:60vh;
+	float:left;
+	padding:4%;
+}
+#maindown{
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+table{
+	width:100%;
+}
+#mainleft table tr td{
+	width:20%;
+	font-size:20px;
+}
+#mainright table tr td{
+	width:20%;
+	font-size:20px;
+}
+#maindown table tr td{
+	width:20%;
+	text-align:center;
+}
+html{
+	font-family:微軟正黑體;
+}
+.subtitle{
+	text-align:center;
+	font-size:25px;
+	font-weight: bold;
+}
+button{
+	width:60%;
+	font-size:25px;
+	border-radius:10px;
+	background-color:#99ffcc;
+}
+body{
+	width:100%;
+	height:100vh;
+	margin:0;
+	/*background:linear-gradient(-40deg,#99ccff,#cc99ff);*/
+	background-image:url("../main.jpeg");
+	background-color:rgba(255,255, 255,0.8);
+	background-blend-mode:lighten;
+	background-size:cover;
+}
+hr{
+	border:0;
+	height:2px;
+	background-image:linear-gradient(to right,#ccc,#333,#ccc);
+}

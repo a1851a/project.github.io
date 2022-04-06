@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/knn.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/knn1.js"></script>
+	<meta name="viewport" content="width=device-width, initial=1.0">
+	<title>分群KNN與交叉分析</title>
+</head>
+<body>
+	<div id="gocluster">
+		<a href="cluster.html">分群截圖</a>
+	</div>
+	<div id="gocross">
+		<a href="cross.html">交叉分析截圖</a>
+	</div>
+	<div id="gomain">
+		<a href="main.html">回主頁</a>
+		<hr>
+	</div>
+	<div id="mainleft">
+		<p class="subtitle">輸入變數</p>
+		<hr>
+			<table>
+				<tr>
+					<td>公司代號</td>
+					<td><input type="text" id="code"></td>
+					<td>當月營收</td>
+					<td>
+						<input type="text" id="mr">
+					</td>
+				</tr>
+				<tr>
+					<td>上月營收</td>
+					<td>
+						<input type="text" id="lmr">
+					</td>
+					<td>去年當月營收</td>
+					<td><input type="text" id="ymr"></td>
+				</tr>
+				<tr>
+					<td>當月累計營收</td>
+					<td>
+						<input type="text" id="mc">
+					</td>
+					<td>去年累計營收</td>
+					<td>
+						<input type="text" id="yc">
+					</td>
+				</tr>
+				<tr>
+					<td>去年同月增減</td>
+					<td>
+						<select id="ym">
+						<option value="大於0">大於0</option>
+						<option value="小於0">小於0</option>
+						</select>
+					</td>
+					<td>上月比較增減</td>
+					<td>
+						<select id="lmc">
+						<option value="大於0">大於0</option>
+						<option value="等於0">等於0</option>
+						<option value="小於0">小於0</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="mainright">
+			<p class="subtitle">kmeans</p>
+			<hr>
+			<table>
+				<tr>
+					<td>資料的群集:</td>
+					<td id="nowcluster"></td>
+					<td>大於0 or 小於0</td>
+					<td id="nowkmeanspep"></td>
+				</tr>
+			</table>
+			<p class="subtitle">knn</p>
+			<hr>
+			<table>
+				<tr>
+					<td>knn id:</td>
+					<td id="nowknnid"></td>
+					<td>knn pep:</td>
+					<td id="nowknnpep"></td>
+				</tr>
+			</table>
+				<p class="subtitle">交叉分析</p>
+				<hr>
+				<table>
+					<tr>
+						<td>分析結果:</td>
+						<td id="nowcafinal"></td>
+					</tr>
+				</table>
+		</div>
+		<div id="maindown">
+			<table>
+				<td><button id="SendBtn" onclick="sendresult()">送出</button></td>
+				<td><button id="CountBtn" onclick="kmeans()">計算</button></td>
+				<td><button id="CrossAnaBtn" onclick=" crossanalysis()">交叉分析</button></td>
+				<td><button id="KNNBtn" onclick="knn()">KNN</button></td>
+				<td><button id="CleanDataBtn" onclick="emptyInput()">清除資料</button></td>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>

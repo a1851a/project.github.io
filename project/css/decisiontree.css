@@ -1,0 +1,56 @@
+#gomain{
+	text-align:right;
+	font-size:25px;
+}
+body{
+	font-family: "微軟正黑體";
+}
+td{
+	border:0.5rem #CD5C5C groove;
+	width:18rem;
+	height:5rem;
+}
+#choiceTable{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:90vh;
+	width:50vw;
+	float:left;
+}
+#confirmAndPep{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:90vh;
+	width:45vw;
+	float:right;
+}
+#confirmAndPep td{
+	border:none;
+}
+h5{
+	font-size:1.5rem;
+	line-height:0.5rem;
+}
+.theform{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.theform select input{
+	font-size:.6rem;
+}
+.theform input{
+	width:40%;
+}
+#confirmbtn{
+	width:12rem;
+	height:3rem;
+	font-size:1.3rem;
+}
+#finalanswer{
+	background-color:skyblue;
+	font-size:3.5rem;
+	text-align:center;
+}

@@ -1,0 +1,28 @@
+body{
+	font-family:"微軟正黑體";
+	width:100%;
+	height:100vh;
+	margin:0;
+	background-image:url("../main.jpeg");
+	background-color:rgba(255,255, 255,0.8);
+	background-blend-mode:lighten;
+	background-size:cover;
+}
+h1{
+	font-size:50px;
+	text-align:center;
+}
+h2{
+	font-size:30px;
+	text-align:center;
+}
+#gograph{
+	text-align:right;
+	font-size:25px;
+}
+#btnplace{
+	text-align:center;
+}
+.btn{
+	font-size:30px;
+}

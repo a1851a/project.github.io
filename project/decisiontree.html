@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/decisiontree.css">
+	<script src="javascript/decisiontree.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>決策樹</title>
+</head>
+<body>
+	<div id="gomain">
+		<a href="main.html">回主頁</a>
+	</div>
+	<div>
+		<div id="choiceTable">
+		<table>
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>公司代號 &nbsp&nbsp&nbsp</h5>
+						<input type="text" id="codetext">
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>當月營收 &nbsp&nbsp&nbsp</h5>
+						<input type="text" id="mrtext">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>上月營收 &nbsp&nbsp&nbsp</h5>
+						<input type="text" id="lmrtext">
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>去年當月營收 &nbsp&nbsp&nbsp</h5>
+						<input type="text" id="ymrtext">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>當月累計營收 &nbsp&nbsp&nbsp </h5>
+						<input type="text" id="mctext">
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>去年累計營收 &nbsp&nbsp&nbsp</h5>
+						<input type="text" id="yctext">
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="theform">
+						<h5>去年同月增減(%) &nbsp&nbsp&nbsp</h5>
+						<select id="ymselect">
+						<option value="大於0">大於0</option>
+						<option value="小於0">小於0</option>
+						</select>
+					</div>
+				</td>
+				<td>
+					<div class="theform">
+						<h5>上月比較增減(%) &nbsp&nbsp&nbsp</h5>
+						<select id="lmcselect">
+						<option value="大於0">大於0</option>
+						<option value="等於0">等於0</option>
+						<option value="小於0">小於0</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="confirmAndPep">
+		<table>
+			<tr>
+				<td>
+					<button id="confirmbtn" onclick="confirm()">confirm and send</button>
+				</td>
+				<td>前期比較增減(%)</td>
+				<td id="finalanswer"></td>
+			</tr>
+		</table>
+	</div>
+	</div>
+</body>
+</html>
